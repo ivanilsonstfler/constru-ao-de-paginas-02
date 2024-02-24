@@ -1,0 +1,1 @@
+document.write("Meu segundo Script" + "<br>" + "To aprendendo!")
