@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+  var i = 1;
+  while (i<10) {
+    i++;
+    if(!confirm("i =" + i + "\nClique em cancelar para executar um continue"))
+      continue;
+    document.write("Interaçao " + i + "<br>");
+  }
+  alert('O laço terminou \n i =' + i);
+</script>
+</html>
