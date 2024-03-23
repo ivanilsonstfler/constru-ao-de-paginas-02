@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando a estrutura de repetição do...while:</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+let soma = 0;
+let contador = 0;
+let numero;
+
+do {
+    numero = Number(prompt("Digite um número (ou 9999 para terminar):"));
+    if (numero !== 9999) {
+        soma += numero;
+        contador++;
+    }
+} while (numero !== 9999);
+
+let media = soma / contador;
+
+console.log("Soma = " + soma);
+console.log("Média = " + media);
+
+</script>
+</html>

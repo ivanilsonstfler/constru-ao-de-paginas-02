@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    let numeros = [];
+let soma = 0;
+let media = 0;
+
+while (true) {
+    let numero = prompt("Digite um número positivo (ou 'sair' para terminar):");
+
+    if (numero === 'sair') {
+        break;
+    }
+
+    numero = Number(numero);
+
+    if (numero >= 0) {
+        numeros.push(numero);
+        soma += numero;
+    } else {
+        alert("Por favor, digite apenas números positivos.");
+    }
+}
+
+if (numeros.length > 0) {
+    media = soma / numeros.length;
+    alert("A média dos números digitados é: " + media);
+} else {
+    alert("Nenhum número foi digitado.");
+}
+
+</script>
+</html>
