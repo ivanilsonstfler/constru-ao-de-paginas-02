@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo salario</title>
+</head>
+<body>
+    
+</body>
+<script type="text/JavaScript">
+let salario = parseFloat(prompt("Informe o salario do funcionario: "));
+let novo_salario = 0;
+if (salario < 500) {
+    novo_salario = salario * 1.15;
+}
+else if (salario <= 1000) {
+    novo_salario = salario * 1.10;
+    
+} else {
+novo_salario = salario * 1.05;
+}
+alert("O novo salario é " + novo_salario);
+</script>
+</html>
